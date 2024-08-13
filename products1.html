@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Macaw Designz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  margin: 0;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ffa900;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #28cce3;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+h1 {text-align: center; color:#28cce3}
+
+h2 {text-align: center; color:#28cce3}
+
+p {text-align: center;}
+
+div {text-align: center;}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">
+<img src="logot2.jpg" alt="Logo" style="width:15%">
+</div>
+</header>
+
+<div id="navbar">
+  <a class="active" href="index1.html">Home</a>
+  <a href="about1.html">About Us</a>
+ <a href="products1.html">Products</a>
+ <a href="services1.html">Services</a>
+  <a href="contact1.html">Get in Touch</a>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<marquee bgcolor = "#ffa900">
+<b>Special Offer: 10% Discount to All New Customers... A World of Variety Awaits You!</b>
+</marquee>
+
+
+<div class="w3-container">
+
+
+<!-- Products -->
+<h1> Products</h1>
+
+<p> We offer a wide range of products, manuafactured and <strong>custom- made</strong>.Check out our offerings. </p>
+  </section>
+
+<h3 style="border:5px solid #28cce3;">Manufactured Items</h3>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="jewels.jpg">
+      <img src="jewels.jpg" alt="jewels" width="600" height="400">
+    </a>
+    <div class="desc">Jewellery set</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="giftpk4.jpg">
+      <img src="giftpk2.jpg" alt="Men's gift set" width="600" height="400">
+    </a>
+    <div class="desc">Men's gift set</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="candle11.jpg">
+      <img src="candle11.jpg" alt="Sculptured candles" width="600" height="400">
+    </a>
+    <div class="desc">Sculptured candles</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="hat2.jpg">
+      <img src="hat2.jpg" alt="Hats" width="600" height="400">
+    </a>
+    <div class="desc">Hats</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+
+
+
+<h3 style="border:5px solid #ffa900 ;">Custom-made Items</h3>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="jewel5.jpg">
+      <img src="jewel5.jpg" alt="Leather bracelets" width="600" height="400">
+    </a>
+    <div class="desc">Leather bracelets</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="seed.jpg">
+      <img src="seed.jpg" alt="Natural seed earings" width="600" height="400">
+    </a>
+    <div class="desc">Natural seed earings</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="soap4.jpg">
+      <img src="soap4.jpg" alt="Soaps" width="600" height="400">
+    </a>
+    <div class="desc">Soaps (scented and unscented)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="bag1.jpg">
+      <img src="bag1.jpg" alt="Hand-made Tote bags" width="600" height="400">
+    </a>
+    <div class="desc">Hand-made tote bags</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+
+<br>
+
+<div class="w3-container">
+  <h2>What's Available</h2>
+<br>
+
+  <table class="w3-table">
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+      <th>Price (TT$)</th>
+       </tr>
+    <tr>
+      <td>Bags</td>
+      <td>manufactured and custom-made</td>
+      <td>From $40.00</td>
+      </tr>
+    <tr>
+      <td>Candles</td>
+      <td>manufactured and custom-made</td>
+      <td>From $100.00</td>
+      </tr>
+
+<tr>
+      <td>Gift sets</td>
+      <td>manufactured and custom-made</td>
+      <td>From $100.00</td>
+      </tr>
+
+<tr>
+      <td>Hats</td>
+      <td>manufactured and custom-made</td>
+      <td>From $40.00</td>
+      </tr>
+<tr>
+      <td>Local souvenirs</td>
+      <td>manufactured and custom-made</td>
+      <td>From $40.00</td>
+      </tr>
+
+<tr>
+      <td>Pictureframes</td>
+      <td>manufactured and custom-made</td>
+      <td>From $40.00</td>
+      </tr>
+
+<tr>
+      <td>Soaps</td>
+      <td>manufactured and custom-made</td>
+      <td>From $50.00</td>
+      </tr>
+
+<tr>
+      <td>Towel sets</td>
+      <td>manufactured (personalised on request)</td>
+      <td>From $50.00</td>
+      </tr>
+
+
+      </table>
+</div>
+
+<br>
+
+<div class="w3-container">
+  <h2>You choose, we deliver</h2>
+ <p> Place your order via the form below:</p>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-J5VJhfuDNHcQdq7QC6iydyUTGlQGuQlfNNwZO3xSLRiHjQ/viewform?embedded=true" width="640" height="1286" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  
+
+
+  <div class="w3-panel w3-leftbar w3-light-grey">
+    <p class="w3-xlarge w3-serif"><i>"Every decade needs its own manual of handicraft. "</i> <br>Liberty Hyde Bailey </p>
+  </div>
+
+
+<div class="w3-container w3-cyan">
+
+<h5>&copy; Macaw Designz.   All rights reserved. 2024</h5>
+
+
+</div>
+
+</body>
+</html>
